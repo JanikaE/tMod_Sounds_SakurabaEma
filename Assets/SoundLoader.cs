@@ -13,13 +13,13 @@ namespace Sounds_SakurabaEma.Assets
 
         public override void Load()
         {
-            HitSound = GetSoundStyle("hit_", 3, soundLimitBehavior: SoundLimitBehavior.ReplaceOldest);
+            HitSound = GetSoundStyle("hit_", 5, soundLimitBehavior: SoundLimitBehavior.ReplaceOldest);
             KillSound = [];
             for (int i = 1; i <= Sounds_SakurabaEma.KillSoundCount; i++)
             {
                 KillSound.Add(GetSoundStyle($"Kill/{i}", 1));
             }
-            KillSound_2 = GetSoundStyle("kill", 1);
+            KillSound_2 = GetSoundStyle("kill_", 4);
         }
     }
 }
