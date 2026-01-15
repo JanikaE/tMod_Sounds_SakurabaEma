@@ -1,1 +1,2 @@
-Modify this file with a description of your mod.
+魔法少女的魔女裁判-樱羽艾玛
+替换了玩家的受击音效和死亡音效

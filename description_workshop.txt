@@ -1,1 +1,4 @@
-This description will show up on the steam page, check out https://steamcommunity.com/comment/Guide/formattinghelp.
+魔法少女的魔女裁判-樱羽艾玛
+替换了玩家的受击音效和死亡音效
+
+模组代码主页：https://github.com/JanikaE/tMod_Sounds_SakurabaEma

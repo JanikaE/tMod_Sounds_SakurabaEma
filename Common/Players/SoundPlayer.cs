@@ -44,6 +44,7 @@ namespace Sounds_SakurabaEma.Common.Players
         {
             // 禁用原版死亡音效
             playSound = false;
+            genDust = CommonConfig.Instance.IMaTV;
             return true;
         }
 
