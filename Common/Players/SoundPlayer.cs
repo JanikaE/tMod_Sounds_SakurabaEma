@@ -36,6 +36,12 @@ namespace Sounds_SakurabaEma.Common.Players
             modifiers.DisableSound();
         }
 
+        public override void ModifyHurt(ref Player.HurtModifiers modifiers)
+        {
+            modifiers.DisableSound();
+            SoundEngine.PlaySound(SoundLoader.HitSound, Player.position);
+        }
+
         #endregion
 
         #region death

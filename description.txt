@@ -1,2 +1,6 @@
 魔法少女的魔女裁判-樱羽艾玛
 替换了玩家的受击音效和死亡音效
+
+2种死亡音效可配置
+
+模组代码主页：https://github.com/JanikaE/tMod_Sounds_SakurabaEma

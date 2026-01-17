@@ -19,7 +19,7 @@ namespace Sounds_SakurabaEma.Assets
             {
                 KillSound.Add(GetSoundStyle($"Kill/{i}", 1));
             }
-            KillSound_2 = GetSoundStyle("kill_", 4);
+            KillSound_2 = GetSoundStyle("kill_", 4, soundLimitBehavior: SoundLimitBehavior.ReplaceOldest);
         }
     }
 }
