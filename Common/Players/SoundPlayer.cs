@@ -17,13 +17,13 @@ namespace Sounds_SakurabaEma.Common.Players
         public override void OnHitByNPC(NPC npc, Player.HurtInfo hurtInfo)
         {
             hurtInfo.SoundDisabled = true;
-            SoundEngine.PlaySound(SoundLoader.HitSound, Player.position);
+            PlayHitSound();
         }
 
         public override void OnHitByProjectile(Projectile proj, Player.HurtInfo hurtInfo)
         {
             hurtInfo.SoundDisabled = true;
-            SoundEngine.PlaySound(SoundLoader.HitSound, Player.position);
+            PlayHitSound();
         }
 
         public override void ModifyHitByNPC(NPC npc, ref Player.HurtModifiers modifiers)
@@ -39,7 +39,19 @@ namespace Sounds_SakurabaEma.Common.Players
         public override void ModifyHurt(ref Player.HurtModifiers modifiers)
         {
             modifiers.DisableSound();
-            SoundEngine.PlaySound(SoundLoader.HitSound, Player.position);
+            PlayHitSound();
+        }
+
+        private void PlayHitSound()
+        {
+            if (CommonConfig.Instance.UseKiangHitSound)
+            {
+                SoundEngine.PlaySound(SoundLoader.HitSound_Kiang, Player.position);
+            }
+            else
+            {
+                SoundEngine.PlaySound(SoundLoader.HitSound, Player.position);
+            }
         }
 
         #endregion

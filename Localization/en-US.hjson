@@ -2,12 +2,17 @@ Mods: {
 	Sounds_SakurabaEma: {
 		Configs: {
 			CommonConfig: {
+				DisplayName: Common Config
+
 				IMaTV: {
 					Label: i ma TV
 					Tooltip: ""
 				}
 
-				DisplayName: Common Config
+				UseKiangHitSound: {
+					Label: Only Kiang Hit Sound
+					Tooltip: ""
+				}
 			}
 		}
 
